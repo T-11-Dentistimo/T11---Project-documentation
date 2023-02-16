@@ -12,22 +12,22 @@ Dentistimo is a web application that provides a dental appointment booking servi
 
 Below links represent the project structure and will guide you to designated repositories. In each repository, a detailed description of respected component responsibilities are provided.
 
-- [Web Application repository](https://git.chalmers.se/courses/dit355/dit356-2022/t-11/t11-web-application)
+- [Web Application repository](https://github.com/T-11-Dentistimo/T11-Web-Application)
 
 The **Web Application** is the user interface where available time slots for appointments can be spotted and bookings can be made. 
 It consists of a Vue frontend and an Express backend.
 
-- [Database Model Handler repository](https://git.chalmers.se/courses/dit355/dit356-2022/t-11/t11-database-model-handler)
+- [Database Model Handler repository](https://github.com/T-11-Dentistimo/T11-Database-Model-Handler)
 
 The **Database Model Handler** defines the schema for the clinics and bookings, which is used to persist clinic information and bookings in the MongoDB database.
 
 
-- [Booking Validator repository](https://git.chalmers.se/courses/dit355/dit356-2022/t-11/t11-booking-validator)
+- [Booking Validator repository](https://github.com/T-11-Dentistimo/T11-Booking-Validator)
 
 The **Booking Validator** queues booking requests from the Web Application and sends them to the Database Model Handler to persist the bookings in the database. 
 It also sends a confirmation email for every successful booking.
 
-- [Schedule Handler repository](https://git.chalmers.se/courses/dit355/dit356-2022/t-11/t11-schedule-handler)
+- [Schedule Handler repository](https://github.com/T-11-Dentistimo/T11-Schedule-Handler)
 
 The **Schedule Handler** stores clinic information and bookings from the MongoDB database to generate schedules for user-desired time intervals. 
 The generated schedule is passed on to the Web Application component.
